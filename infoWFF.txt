@@ -1,0 +1,77 @@
+Whiff-network is a decentralised marketable POW-only cryptocurrency on X16s algorithm
+
+The source code is built on open source software and will be updated regulary by "Whiff-dev"
+
+Whiff decided, not to offer a POS or MN system.
+
+The reason:
+
+Crypto had a hard year in 2018 and almost all prices fell hardly.
+
+According to the high difficulty that big coins like BTC and ETH have these days, mining has become very unprofitable,
+
+even for those, who own a big mining rig and have lots of asics or GPUS running.
+
+So, basically, whiff wants to offer you a new, profitable mining opportunity.
+
+Whiff is not only for those, who have expensive high-end hardware, but also for those, who have only one, or a few
+
+GPUs/CPUs 
+
+Whiff is for everyone and you do no even need a PC to be a part of our network.
+
+You can join us on discord, where giveaways and airdrops take place.
+
+WFF-Discord has a tip-bot included, which allows you, to store your coins on an external server and send, recieve or hold them,
+
+without installing one of our core-wallets.
+
+There might also be some good mining apps for X16s in the near future ( there are some at the moment but they dont seem to be that good ).
+
+I expect, it will be possible to mine and store whiff on a mobilephone soon.
+
+
+Where does whiff come from ?
+
+Whiff is made in germany
+
+The whiff-dev lives in Bavaria
+
+
+How big is the Whiff premine? Is whiff commerical?
+
+Whiff has a very low premine ( 475k / 1 billion coins )
+
+The premine is meant, to be used for listings airdrops, giveaways etc.
+
+I promise, not to sell at least 90% of the total premine on exchange until the end of 2019.
+
+I expect, that at least 25% of the premine will be required, to bring whiff on it's first exchange.
+
+So, as you see, the Whiff-dev (I) won't make fast profit with whiff. Good project = Money / Bad project = no money .
+Whiff will do good, i am sure about that, so i set my hopes on long term. ( Every coin-team should do that in general )
+
+
+Whiff-network is more than just a coin, 
+
+I founded whiff, to give people a taste of, what crypto has been before 2018 and what i expect crypto to be in the future.
+
+WFF means connecting the best of past and future to me.
+
+What about the Dev? 
+
+- 5 years crypto experience 
+
+- young adult
+
+- I live in germany, bavaria.
+
+- I work on whiff full-time for now. ( it is possible that this changes over time )
+
+- WFF is not my first project, but the first one, that i really want to work on for a long time.
+
+Launch date of WFF: 07/09/2018
+
+Creation of this file: 15/09/2018
+
+Last updated: 15/09/2018

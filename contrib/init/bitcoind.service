@@ -1,0 +1,22 @@
+[Unit]
+Description=Whiff's distributed currency daemon
+After=network.target
+
+[Service]
+User=whiff
+Group=whiff
+
+Type=forking
+PIDFile=/var/lib/whiffd/whiffd.pid
+ExecStart=/usr/bin/whiffd -daemon -pid=/var/lib/whiffd/whiffd.pid \
+-conf=/etc/whiff/whiff.conf -datadir=/var/lib/whiffd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

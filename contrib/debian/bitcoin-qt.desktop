@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Whiff Core
+Comment=Connect to the Whiff P2P Network
+Comment[de]=Verbinde mit dem Whiff peer-to-peer Netzwerk
+Comment[fr]=Whiff, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Whiff, eşten eşe kriptografik sanal para birimi
+Exec=whiff-qt %u
+Terminal=false
+Type=Application
+Icon=whiff128
+MimeType=x-scheme-handler/whiff;
+Categories=Office;Finance;

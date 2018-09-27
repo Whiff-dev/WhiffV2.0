@@ -1,0 +1,6 @@
+usr/local/bin/whiff-qt usr/bin
+share/pixmaps/whiff32.xpm usr/share/pixmaps
+share/pixmaps/whiff16.xpm usr/share/pixmaps
+share/pixmaps/whiff128.png usr/share/pixmaps
+debian/whiff-qt.desktop usr/share/applications
+debian/whiff-qt.protocol usr/share/kde4/services/

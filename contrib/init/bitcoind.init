@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  whiffd The whiff core server.
+#
+#
+# chkconfig: 345 80 20
+# description: whiffd
+# processname: whiffd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/whiffd, see below
+if [ -f /etc/sysconfig/whiffd ]; then
+        . /etc/sysconfig/whiffd
+fi
+
+RETVAL=0
+
+prog=whiffd
+# you can override the lockfile via WHIFFD_LOCKFILE in /etc/sysconfig/whiffd
+lockfile=${WHIFFD_LOCKFILE-/var/lock/subsys/whiffd}
+
+# whiffd defaults to /usr/bin/whiffd, override with WHIFFD_BIN
+whiffd=${WHIFFD_BIN-/usr/bin/whiffd}
+
+# whiffd opts default to -disablewallet, override with WHIFFD_OPTS
+whiffd_opts=${WHIFFD_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $whiffd $whiffd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

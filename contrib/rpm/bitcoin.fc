@@ -1,0 +1,8 @@
+/usr/bin/whiff-cli		--	gen_context(system_u:object_r:whiff_exec_t,s0)
+/usr/sbin/whiffd		--	gen_context(system_u:object_r:whiff_exec_t,s0)
+/usr/lib(64)?/whiff/whiffd		--	gen_context(system_u:object_r:whiff_exec_t,s0)
+
+/etc/whiff(/.*)?		gen_context(system_u:object_r:whiff_conf_t,s0)
+/var/lib/whiff(/.*)?		gen_context(system_u:object_r:whiff_var_lib_t,s0)
+
+(/var)?/run/whiffd(/.*)?   gen_context(system_u:object_r:whiff_var_run_t,s0)

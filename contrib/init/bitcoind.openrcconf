@@ -1,0 +1,33 @@
+# /etc/conf.d/whiffd: config file for /etc/init.d/whiffd
+
+# Config file location
+#WHIFFD_CONFIGFILE="/etc/whiff/whiff.conf"
+
+# What directory to write pidfile to?  (created and owned by $WHIFFD_USER)
+#WHIFFD_PIDDIR="/var/run/whiffd"
+
+# What filename to give the pidfile
+#WHIFFD_PIDFILE="${WHIFFD_PIDDIR}/whiffd.pid"
+
+# Where to write whiffd data (be mindful that the blockchain is large)
+#WHIFFD_DATADIR="/var/lib/whiffd"
+
+# User and group to own whiffd process
+#WHIFFD_USER="whiff"
+#WHIFFD_GROUP="whiff"
+
+# Path to whiffd executable
+#WHIFFD_BIN="/usr/bin/whiffd"
+
+# Nice value to run whiffd under
+#WHIFFD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#WHIFFD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for whiffd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+WHIFFD_SIGTERM_TIMEOUT=60
